@@ -11,6 +11,7 @@
         />
       </section>
     </div>
+    <Reviews />
   </div>
 </template>
 
@@ -18,13 +19,15 @@
 import Header from './components/Header.vue'
 import Description from './components/Description.vue'
 import Services from './components/Services.vue'
+import Reviews from './components/Reviews.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Description,
-    Services
+    Services,
+    Reviews
   },
   data () {
     return {
