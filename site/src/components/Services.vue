@@ -23,6 +23,17 @@
     .offers-offers-wrap {
         font-size: 22px;
     }
+
+    .offers {
+        flex: 1 1 33.333%;
+        padding: 25px; 
+    }
+
+    .offers-inner{
+        position: relative;
+        padding: 25px;
+        box-shadow: 0px 0px 16px black;
+    }
 </style>
 
 <script>

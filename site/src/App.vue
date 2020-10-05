@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Description />
+    <Description class ="test" />
     <div class ="services">
       <section class="offers">
         <Services 
@@ -49,24 +49,23 @@ export default {
 
 <style>
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    /* margin-top: 60px; */
   }
 
-  * {
+  /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+  } */
 
   .services {
-    width: 100vw;
+    /* width: 100vw;
     min-width: 100vh;
-    overflow: hidden;
+    overflow: hidden; */
 
     display: flex;
     justify-content: center;
@@ -75,9 +74,10 @@ export default {
 
   .offers {
     display: flex; 
-    max-width: 1280px;
+    /* max-width: 1280px;
     padding: 25px;
     margin: 0 auto;
+    font-size: 15px; */
   }
 
 </style>
