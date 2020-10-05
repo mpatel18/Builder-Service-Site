@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-jumbotron bg-variant="info" text-variant="white" border-variant="dark">
+        <b-jumbotron bg-variant="secondary" text-variant="light" border-variant="dark">
             <template v-slot:header>Build.Net</template>
 
             <template v-slot:lead>
