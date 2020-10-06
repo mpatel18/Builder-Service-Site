@@ -21,7 +21,7 @@
 
 <style>
     .review-caption {
-        margin-right: 20%;
+        margin-right: 10%;
     }
 </style>
 

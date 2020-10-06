@@ -110,7 +110,7 @@ export default {
   }
 
   .review-header {
-    padding-top: 1%;
+    padding-top: 2%;
     color: white;
   }
 
@@ -120,7 +120,7 @@ export default {
 
   .reviews {
     width: 50%;
-    padding-top: 2%;
+    padding-top: 3%;
     padding-left: 15%;
     padding-bottom: 2%;
   }
