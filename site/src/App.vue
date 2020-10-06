@@ -11,7 +11,15 @@
         />
       </section>
     </div>
-    <Reviews />
+    <div class ="review">
+      <section class = "reviews">
+        <Reviews 
+          v-for="reviews in reviews"
+          :key="reviews.name"
+          :reviews="reviews"
+        />
+      </section>
+    </div>
   </div>
 </template>
 
@@ -43,6 +51,23 @@ export default {
         {
           title: 'Testing',
           offer: 'Take measures to check the quality, performance, or reliability of (something), especially before putting it into widespread use or practice.'
+        }
+      ],
+      reviews: [
+        {
+          name: 'User 1',
+          review: "This was a great site to build my service on",
+          stars: 5
+        },
+        {
+          name: 'User 2',
+          review: "I was able to do the most with what offered here",
+          stars: 4
+        },
+        {
+          name: 'User 3',
+          review: "I'm glad I went with this, great template site",
+          stars: 5
         }
       ]
     }
