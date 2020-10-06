@@ -11,8 +11,8 @@
         />
       </section>
     </div>
+    <h2 class ="review-header">Reviews</h2>
     <div class ="review">
-      <h2 class ="review-header">Reviews</h2>
       <section class = "reviews">
         <Reviews 
           v-for="reviews in reviews"
@@ -20,6 +20,18 @@
           :reviews="reviews"
         />
       </section>
+      <div class ="user-response">
+        <b-container fluid>
+          <b-row class="my-1" v-for="type in types" :key="type">
+            <b-col sm="3">
+              <label :for="`type-${type}`">Type <code>{{ type }}</code>:</label>
+            </b-col>
+            <b-col sm="12">
+              <b-form-input :id="`type-${type}`" :type="type"></b-form-input>
+            </b-col>
+          </b-row>
+      </b-container>
+      </div>
     </div>
   </div>
 </template>
@@ -70,7 +82,12 @@ export default {
           review: "I'm glad I went with this, great template site",
           stars: 5
         }
-      ]
+      ], 
+      types: [
+          'UserName:',
+          'Review:',
+          'Rating:',
+        ]
     }
   }
 }
@@ -110,12 +127,19 @@ export default {
   }
 
   .review-header {
-    padding-top: 2%;
-    color: white;
+    padding: 2%;
+    color: black;
   }
 
   .review {
     background-color: #2c3e50;
+    display: flex;
+  }
+
+  .user-response {
+    padding-top: 2%;
+    padding-left: 12%;
+    padding-bottom: 2%;
   }
 
   .reviews {
