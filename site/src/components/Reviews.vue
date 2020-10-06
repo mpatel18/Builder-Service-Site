@@ -3,19 +3,27 @@
         <b-card>
             <b-media>
             <template v-slot:aside>
-                <b-img blank blank-color="#ccc" width="64" alt="placeholder"></b-img>
+                <b-img blank blank-color="#000" width="64" alt="placeholder"></b-img>
             </template>
-            <h5 class="mt-0">{{ reviews.name }}</h5>
-            <p>
-                {{ reviews.review }}
-            </p>
-            <p>
-                {{ reviews.stars  }} / 5
-            </p>
+            <div class ="review-caption"> 
+                <h5 class="mt-0">{{ reviews.name }}</h5>
+                <p>
+                    {{ reviews.review }}
+                </p>
+                <p>
+                    {{ reviews.stars  }} / 5
+                </p>
+            </div>
             </b-media>
         </b-card>
     </div>
 </template>
+
+<style>
+    .review-caption {
+        margin-right: 20%;
+    }
+</style>
 
 <script>
 export default {

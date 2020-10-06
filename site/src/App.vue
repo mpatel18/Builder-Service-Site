@@ -12,6 +12,7 @@
       </section>
     </div>
     <div class ="review">
+      <h2 class ="review-header">Reviews</h2>
       <section class = "reviews">
         <Reviews 
           v-for="reviews in reviews"
@@ -84,11 +85,11 @@ export default {
     color: #2c3e50;
   }
 
-  /* * {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  } */
+  }
 
   .services {
     /* width: 100vw;
@@ -106,6 +107,22 @@ export default {
     padding: 25px;
     margin: 0 auto;
     font-size: 15px; */
+  }
+
+  .review-header {
+    padding-top: 1%;
+    color: white;
+  }
+
+  .review {
+    background-color: #2c3e50;
+  }
+
+  .reviews {
+    width: 50%;
+    padding-top: 2%;
+    padding-left: 15%;
+    padding-bottom: 2%;
   }
 
 </style>
