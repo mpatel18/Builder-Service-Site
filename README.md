@@ -1,4 +1,4 @@
-# Service-Site
+# Service-Site-Template
 
 Description: 
 An site template for service based websites. Allowing user's a simple website design for a site that wants to promote their service or skill. 
