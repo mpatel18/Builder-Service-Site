@@ -1,7 +1,9 @@
-# Builder-Service-Site
+# Service-Site
 
 Description: 
-An open source site template for service based website avalibe for the public. Allowing user's a responsive website design for publishing a site for their 
-immediate needs. 
+An site template for service based websites. Allowing user's a simple website design for a site that wants to promote their service or skill. 
+A simple project created to help understand vue.js and the frameworks that revolve around it.
 
-Technology: vue.js, javascript, HTML5, CSS3, BootstrapVue
+Technology: vue.js, javascript, HTML5, CSS3, BootstrapVue, Vuetify*
+
+*For testing purposes
