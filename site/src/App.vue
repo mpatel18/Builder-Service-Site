@@ -86,6 +86,9 @@
       </b-container>
       </div>
     </div>
+    <div>
+        
+    </div>
   </div>
 </template>
 
@@ -136,7 +139,7 @@ export default {
           'UserName:',
           'Review:',
           'Rating:',
-        ]
+      ]
     }
   }
 }
@@ -186,8 +189,8 @@ export default {
   }
 
   .user-response {
-    padding-top: 3%;
-    padding-left: 10%;
+    padding-top: 2%;
+    padding-left: 7%;
     padding-bottom: 2%;
   }
 
