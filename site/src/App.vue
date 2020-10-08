@@ -22,8 +22,8 @@
                     <b-nav-item-dropdown text="Lang" right>
                         <b-dropdown-item @click="changeLocale('en')">EN</b-dropdown-item>
                         <b-dropdown-item @click="changeLocale('es')">ES</b-dropdown-item>
-                        <b-dropdown-item>RU</b-dropdown-item>
-                        <b-dropdown-item>FA</b-dropdown-item>
+                        <!-- <b-dropdown-item>RU</b-dropdown-item>
+                        <b-dropdown-item>FA</b-dropdown-item> -->
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>
@@ -64,7 +64,7 @@
         <b-container fluid>
           <b-row class="my-1" v-for="type in types" :key="type">
             <b-col sm="3">
-              <label :for="`type-${type}`">Type <code>{{ type }}</code>:</label>
+              <label :for="`type-${type}`">Type <code>{{ $t(type) }}</code>:</label>
             </b-col>
             <b-col sm="12">
                <input v-model="value" type="text" class="form-control" name="input">
@@ -94,15 +94,15 @@ export default {
       offers: [
         {
           title: 'Consulting',
-          offer: 'The business of giving expert advice to other professionals, typically in financial and business matters.'
+          offer: 'C_Descrip'
         },
         {
           title: 'Management',
-          offer: 'Management is the coordination and administration of tasks to achieve a goal.'
+          offer: 'M_Descrip'
         },
         {
           title: 'Testing',
-          offer: 'Take measures to check the quality, performance, or reliability of (something), especially before putting it into widespread use or practice.'
+          offer: 'T_Descrip'
         }
       ],
       reviews: [
@@ -123,9 +123,9 @@ export default {
         }
       ], 
       types: [
-          'UserName:',
-          'Review:',
-          'Rating:',
+          'UserName',
+          'Review',
+          'Rating',
       ],
       value:null
     }

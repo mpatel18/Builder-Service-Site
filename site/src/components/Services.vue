@@ -3,11 +3,11 @@
         <div class ="offers-inner">
             <div class ="offers-text-wrap">
                 <h2 class="bg-text">
-                    {{ offers.title }}
+                    {{ $t(offers.title) }}
                 </h2>
             </div>
             <div class="offers-offer-wrap">
-                <p>{{ offers.offer }}</p>
+                <p>{{ $t(offers.offer) }}</p>
             </div>
         </div>
     </div>
