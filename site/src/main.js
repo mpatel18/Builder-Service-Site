@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import i18n from './plugins/i18n';
 
 import App from './App.vue'
 
@@ -16,5 +17,6 @@ Vue.config.productionTip = false
 
 new Vue({
   vuetify,
+  i18n,
   render: h => h(App)
 }).$mount('#app')

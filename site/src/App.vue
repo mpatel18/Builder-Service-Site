@@ -2,13 +2,13 @@
   <div id="app">
     <div>
         <b-navbar toggleable="lg" type="dark" variant="dark">
-            <b-navbar-brand href="#services">Build.net</b-navbar-brand>
+            <b-navbar-brand href="#">Build.net</b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                    <b-nav-item href="#">Services</b-nav-item>
+                    <b-nav-item href="#review">{{ $t('review_tag') }}</b-nav-item>
                     <!-- <b-nav-item href="#" disabled>Disabled</b-nav-item> -->
                 </b-navbar-nav>
 
@@ -19,22 +19,12 @@
                         <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
                     </b-nav-form> -->
 
-                    <b-nav-item-dropdown text="Lang" right disabled>
-                        <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
+                    <b-nav-item-dropdown text="Lang" right>
+                        <b-dropdown-item @click="changeLocale('en')">EN</b-dropdown-item>
+                        <b-dropdown-item @click="changeLocale('es')">ES</b-dropdown-item>
+                        <b-dropdown-item>RU</b-dropdown-item>
+                        <b-dropdown-item>FA</b-dropdown-item>
                     </b-nav-item-dropdown>
-
-                    <b-nav-item-dropdown right disabled>
-                        <!-- Using 'button-content' slot -->
-                        <template v-slot:button-content>
-                            <em>User</em>
-                        </template>
-                        <b-dropdown-item href="#">Profile</b-dropdown-item>
-                        <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-                    </b-nav-item-dropdown>
-
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
@@ -42,19 +32,16 @@
     <div>
         <b-jumbotron bg-variant="secondary" text-variant="light" border-variant="dark">
             <template v-slot:header>Build.Net</template>
-
             <template v-slot:lead>
-                Your one template to design, build, and customize your service of 
-                tomorrow, today. 
+                {{ $t('descrip') }}
             </template>
-
             <hr class="my-4">
-
             <p>
-                Designed to get you up and running.
+               {{ $t('tag') }}
             </p>
         </b-jumbotron>
     </div>
+    <h2 class="service_header"> {{ $t('s_title') }}</h2>
     <div class ="services">
       <section class="offers">
         <Services 
@@ -64,7 +51,7 @@
         />
       </section>
     </div>
-    <h2 class ="review-header">Reviews</h2>
+    <h2 id ="review" class ="review-header"> {{ $t('review_tag') }}</h2>
     <div class ="review">
       <section class = "reviews">
         <Reviews 
@@ -73,28 +60,28 @@
           :reviews="reviews"
         />
       </section>
-      <div class ="user-response">
+      <form id ="user-response" >
         <b-container fluid>
           <b-row class="my-1" v-for="type in types" :key="type">
             <b-col sm="3">
               <label :for="`type-${type}`">Type <code>{{ type }}</code>:</label>
             </b-col>
             <b-col sm="12">
-              <b-form-input :id="`type-${type}`" :type="type"></b-form-input>
+               <input v-model="value" type="text" class="form-control" name="input">
             </b-col>
           </b-row>
-      </b-container>
-      </div>
+        </b-container>
+      </form>
     </div>
     <div>
-        
     </div>
   </div>
 </template>
 
 <script>
-import Services from './components/Services.vue'
+import Services from './components/Services.vue' 
 import Reviews from './components/Reviews.vue'
+import i18n from '@/plugins/i18n';
 
 export default {
   name: 'App',
@@ -139,7 +126,13 @@ export default {
           'UserName:',
           'Review:',
           'Rating:',
-      ]
+      ],
+      value:null
+    }
+  },
+  methods: {
+    changeLocale(locale) {
+      i18n.locale = locale; 
     }
   }
 }
@@ -158,6 +151,14 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .service_header {
+    padding-top: 20px;
   }
 
   .services {
@@ -179,7 +180,7 @@ export default {
   }
 
   .review-header {
-    padding: 2%;
+    padding: 1%;
     color: black;
   }
 
@@ -188,7 +189,7 @@ export default {
     display: flex;
   }
 
-  .user-response {
+  #user-response {
     padding-top: 2%;
     padding-left: 7%;
     padding-bottom: 2%;
