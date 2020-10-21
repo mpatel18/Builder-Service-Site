@@ -162,10 +162,7 @@ export default {
   }
 
   .services {
-    /* width: 100vw;
-    min-width: 100vh;
-    overflow: hidden; */
-
+    overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
