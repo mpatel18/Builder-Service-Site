@@ -7,24 +7,16 @@ A prototype project created to help understand vue.js and the frameworks that re
 Technology: Vue, JavaScript, HTML5, CSS3, BootstrapVue
 
 ## Project setup
-```
-npm install
-```
+    $ npm install
+ 
+## Compiles and hot-reloads for development
+    $ npm run serve
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
+## Compiles and minifies for production
+    $ npm run build
 
 ### Lints and fixes files
-```
-npm run lint
-```
+    $ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
