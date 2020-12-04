@@ -32,91 +32,16 @@
         </b-jumbotron>
     </div>
     <h2 class="service_header"> {{ $t('s_title') }}</h2>
-    <div class ="services">
-      <!-- <section class="offers">
-        <Services 
-          v-for="offers in offers"
-          :key="offers.title"
-          :offers="offers"
-        />
-      </section> -->
-    </div>
     <h2 id ="review" class ="review-header"> {{ $t('review_tag') }}</h2>
-    <div class ="review">
-      <!-- <section class = "reviews">
-        <Reviews 
-          v-for="reviews in reviews"
-          :key="reviews.name"
-          :reviews="reviews"
-        />
-      </section>
-      <form id ="user-response" >
-        <b-container fluid>
-          <b-row class="my-1" v-for="type in types" :key="type">
-            <b-col sm="3">
-              <label :for="`type-${type}`">Type <code>{{ $t(type) }}</code>:</label>
-            </b-col>
-            <b-col sm="12">
-               <input v-model="value" type="text" class="form-control" name="input">
-            </b-col>
-          </b-row>
-        </b-container>
-      </form> -->
-    </div>
   </div>
 </template>
 
 <script>
-// import Services from './components/Services.vue' 
-// import Reviews from './components/Reviews.vue'
 import i18n from '@/plugins/i18n';
 
 export default {
   name: 'App',
   components: {
-    // Services,
-    // Reviews
-  },
-  data () {
-    return {
-      offers: [
-        {
-          title: 'Consulting',
-          offer: 'C_Descrip'
-        },
-        {
-          title: 'Management',
-          offer: 'M_Descrip'
-        },
-        {
-          title: 'Testing',
-          offer: 'T_Descrip'
-        }
-      ],
-      reviews: [
-        {
-          name: 'User 1',
-          review: "This was a great site to build my service on",
-          stars: 5
-        },
-        {
-          name: 'User 2',
-          review: "I was able to do the most with what offered here",
-          stars: 4
-        },
-        {
-          name: 'User 3',
-          review: "I'm glad I went with this, great template site",
-          stars: 5
-        }
-      ], 
-      types: [
-          'UserName',
-          'Review',
-          'Rating',
-      ],
-      value:null
-    }
   },
   methods: {
     changeLocale(locale) {
@@ -148,42 +73,9 @@ export default {
   .service_header {
     padding-top: 20px;
   }
-
-  .services {
-    overflow: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .offers {
-    display: flex; 
-    /* max-width: 1280px;
-    padding: 25px;
-    margin: 0 auto;
-    font-size: 15px; */
-  }
-
+  
   .review-header {
     padding: 1%;
     color: black;
-  }
-
-  .review {
-    background-color: #2c3e50;
-    display: flex;
-  }
-
-  #user-response {
-    padding-top: 2%;
-    padding-left: 7%;
-    padding-bottom: 2%;
-  }
-
-  .reviews {
-    width: 50%;
-    padding-top: 3%;
-    padding-left: 15%;
-    padding-bottom: 2%;
   }
 </style>
