@@ -31,6 +31,7 @@ const messages = {'en': {review_tag: 'Reviews',
                          Review: 'Revisión:',
                          Rating: 'Clasificación:'
                         }};
+                        
 export default new VueI18n({locale: 'en', // set locale 
                           fallbackLocale: 'es', // set fallback 
                           messages // set locale messages

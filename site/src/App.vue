@@ -33,17 +33,17 @@
     </div>
     <h2 class="service_header"> {{ $t('s_title') }}</h2>
     <div class ="services">
-      <section class="offers">
+      <!-- <section class="offers">
         <Services 
           v-for="offers in offers"
           :key="offers.title"
           :offers="offers"
         />
-      </section>
+      </section> -->
     </div>
     <h2 id ="review" class ="review-header"> {{ $t('review_tag') }}</h2>
     <div class ="review">
-      <section class = "reviews">
+      <!-- <section class = "reviews">
         <Reviews 
           v-for="reviews in reviews"
           :key="reviews.name"
@@ -61,23 +61,21 @@
             </b-col>
           </b-row>
         </b-container>
-      </form>
-    </div>
-    <div>
+      </form> -->
     </div>
   </div>
 </template>
 
 <script>
-import Services from './components/Services.vue' 
-import Reviews from './components/Reviews.vue'
+// import Services from './components/Services.vue' 
+// import Reviews from './components/Reviews.vue'
 import i18n from '@/plugins/i18n';
 
 export default {
   name: 'App',
   components: {
-    Services,
-    Reviews
+    // Services,
+    // Reviews
   },
   data () {
     return {
