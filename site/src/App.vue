@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <div>
+    <div id="Home">
         <b-navbar toggleable="lg" type="dark" variant="dark">
-            <b-navbar-brand href="#">Build.net</b-navbar-brand>
+            <b-navbar-brand href="#Home">Build.net</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                    <b-nav-item href="#review">{{ $t('review_tag') }}</b-nav-item>
+                    <b-nav-item href="#Review">{{ $t('review_tag') }}</b-nav-item>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
@@ -20,19 +20,14 @@
         </b-navbar>
     </div>
     <div>
-        <b-jumbotron bg-variant="secondary" text-variant="light" border-variant="dark">
-            <template v-slot:header>Build.Net</template>
-            <template v-slot:lead>
-                {{ $t('descrip') }}
-            </template>
+        <b-jumbotron header="Build.net">
+          <template #lead>{{ $t('descrip') }}</template>
             <hr class="my-4">
-            <p>
-               {{ $t('tag') }}
-            </p>
+            <p>{{ $t('tag') }}</p>
         </b-jumbotron>
     </div>
-    <h2 class="service_header"> {{ $t('s_title') }}</h2>
-    <h2 id ="review" class ="review-header"> {{ $t('review_tag') }}</h2>
+    <h2 class="service_header">{{ $t('s_title') }}</h2>
+    <h2 id ="Review" class ="review-header">{{ $t('review_tag') }}</h2>
   </div>
 </template>
 
@@ -41,23 +36,26 @@ import i18n from '@/plugins/i18n';
 
 export default {
   name: 'App',
-  components: {
+  data () {
+    return {
+      value: false
+    }
+  }, 
+  watch: {
+  }, 
+  computed: {
   },
   methods: {
     changeLocale(locale) {
       i18n.locale = locale; 
     }
-  }
+  }, 
 }
 </script>
 
 <style>
   #app {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
   }
 
   * {
@@ -73,7 +71,7 @@ export default {
   .service_header {
     padding-top: 20px;
   }
-  
+
   .review-header {
     padding: 1%;
     color: black;
