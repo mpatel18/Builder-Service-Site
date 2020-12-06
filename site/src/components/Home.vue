@@ -8,8 +8,7 @@
                 <b-navbar-nav>
                     <b-nav-item href="#Review">{{ $t('review_tag') }}</b-nav-item>
                 </b-navbar-nav>
-
-                <!-- Right aligned nav items -->
+                
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item-dropdown text="Lang" right>
                         <b-dropdown-item @click="changeLocale('en')">EN</b-dropdown-item>
@@ -20,24 +19,28 @@
         </b-navbar>
         </div>
         <div>
-            <b-jumbotron header="Service">
-            <template #lead>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat, cumque sed 
-                in aliquid sint. Architecto aperiam illo nostrum exercitationem, eveniet 
-                debitis reprehenderit atque quae temporibus quos reiciendis. Nam, optio.
-            </template>
+            <b-jumbotron bg-variant="dark">
+                <template #header>
+                    <p style="color: white;">Service</p>
+                </template>
+                <template #lead>
+                    <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A placeat, cumque sed 
+                    in aliquid sint. Architecto aperiam illo nostrum exercitationem, eveniet 
+                    debitis reprehenderit atque quae temporibus quos reiciendis. Nam, optio.
+                    </p>
+                </template>
                 <hr class="my-4">
-                <p>
+                <p style="color: white;">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Ducimus nam nemo doloribus.
                 </p>
             </b-jumbotron>
         </div>
         <div class="service">
-            <h2 class="service_header">{{ $t('s_title') }}</h2>
+            <h2 class="service_header" style="color: white;">{{ $t('s_title') }}</h2>
         </div>
         <div class="review">
-            <h2 id ="Review" class ="review-header">{{ $t('review_tag') }}</h2>
+            <h2 id ="Review" class ="review-header" style="color: white;">{{ $t('review_tag') }}</h2>
         </div>
     </div>
 </template>
@@ -54,3 +57,9 @@ export default {
   } 
 }
 </script>
+
+<style>
+    * {
+        background: #1f1f1f;
+    }
+</style>
