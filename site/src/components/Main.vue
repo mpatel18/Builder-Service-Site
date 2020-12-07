@@ -1,4 +1,5 @@
 <template>
+  <div class="main">
     <div>
         <div class="nav-container">
             <header>
@@ -19,39 +20,41 @@
             <div class="block2"></div>
         </div>
     </div>
+  </div>
 </template>
 
 <script>
-import i18n from '@/plugins/i18n';
+  import i18n from '@/plugins/i18n';
 
-export default {
-    name: 'Home',
+  export default {
+    name: 'Main',
     methods: {
-    changeLocale(locale) {
-      i18n.locale = locale; 
+      changeLocale(locale) {
+        i18n.locale = locale; 
+      }
     }
-  } 
-}
+  };
 </script>
 
-<style>
-    * {
-        background: #1f1f1f;
-    }
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+  .main {
+      background: #1f1f1f;
+  }
 
-    .navbar, header { 
-        color: white; 
-    }
+  .nav-container { 
+      color: white; 
+  }
 
-    .block1 { 
-        width: 500px;
-        height: 500px; 
-        background:rgb(143, 46, 46); 
-    }
+  .block1 { 
+      width: 500px;
+      height: 500px; 
+      background:rgb(143, 46, 46); 
+  }
 
-    .block2 {
-        width: 500px;
-        height: 500px; 
-        background: purple;
-    }
+  .block2 {
+      width: 500px;
+      height: 500px; 
+      background: purple;
+  }
 </style>
