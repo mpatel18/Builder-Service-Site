@@ -18,12 +18,6 @@
             <div class="block1"></div>
             <div class="block2"></div>
         </div>
-        <!-- <div class="service">
-            <h2 class="service_header" style="color: white;">{{ $t('s_title') }}</h2>
-        </div>
-        <div class="review">
-            <h2 id ="Review" class ="review-header" style="color: white;">{{ $t('review_tag') }}</h2>
-        </div> -->
     </div>
 </template>
 
