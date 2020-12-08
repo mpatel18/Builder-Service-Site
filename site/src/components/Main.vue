@@ -57,16 +57,15 @@
 
   .main {
     background: #443EAD;
-    z-index: -1;
   }
 
   .main-container{
+    position: relative;
     height: 100vh; 
-    z-index: 1;
+    z-index: 2;
   }
 
   .nav-container {
-
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -119,7 +118,6 @@
     position: fixed;
     top: 0; 
     right: 0;
-    opacity: 60%;
-    z-index: 0;
+    z-index: 1;
   }
 </style>
