@@ -51,6 +51,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
   * {
     margin: 0;
     padding: 0;
@@ -74,8 +77,8 @@
 
     header { 
       color: #E8D5B5; 
-      font-size: 50px;
-      font-weight: bold;
+      font-size: 45px;
+      font-family: 'Nunito', sans-serif;
       cursor: pointer;
     }
 
@@ -91,7 +94,8 @@
         display: block;
         padding: 0 1em; 
         color: #FCF7FF;
-        font-size: 35px;
+        font-size: 30px;
+        font-family: 'Nunito', sans-serif;
         text-decoration: none;
       }
     }
@@ -103,14 +107,17 @@
     h1 { 
       color: #FCF7FF;
       font-size: 6em;
-      font-weight: bold; 
+      font-weight: 700; 
+      font-family: 'Roboto', sans-serif;
       width: 50%; 
     }
 
     p {
       padding: 2em 0em 2em 0em; 
       color: #FCF7FF;
-      font-size: 2.25em;
+      font-size: 2.15em;
+      font-weight: 300;
+      font-family: 'Roboto', sans-serif;
       width: 65%; 
     }
 
@@ -118,13 +125,16 @@
       background: #443EAD;
       border-color: #E8D5B5;
       color: #E8D5B5;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 20px;
       box-shadow: none;
       border-width: 10px 10px 10px 10px;
       border-radius: 25px;
       border-style: solid; 
-      padding: 0.5em 3em 0.5em 3em;
+      outline: none; 
+      padding: 0.5em 3.5em 0.5em 3.5em;
+      font-family: 'Nunito', sans-serif;
+      cursor: pointer;
     }
   }
 
