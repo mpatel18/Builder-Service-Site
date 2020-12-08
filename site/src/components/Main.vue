@@ -16,16 +16,18 @@
           <p>{{ descrip }}</p>
         </div>
     </div>
-    <!-- <svg width="970" height="1367" viewBox="0 0 970 1367">
-          <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(18)" fill="#dfc7ff" stroke="#443ead" stroke-width="1" opacity="0.2">
-            <ellipse cx="476" cy="451.5" rx="476" ry="451.5" stroke="none"/>
-            <ellipse cx="476" cy="451.5" rx="475.5" ry="451" fill="none"/>
-          </g>
-          <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(0 451)" fill="#958bb6" stroke="#443ead" stroke-width="1" opacity="0.4">
-            <ellipse cx="476" cy="458" rx="476" ry="458" stroke="none"/>
-            <ellipse cx="476" cy="458" rx="475.5" ry="457.5" fill="none"/>
-          </g>
-      </svg> -->
+    <svg class="design" width="934" height="1322" viewBox="0 0 934 1322">
+      <g id="Design" transform="translate(-1020)" opacity="0.6">
+        <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1020 419)" fill="#dfc7ff" stroke="#443ead" stroke-width="1" opacity="0.2">
+          <ellipse cx="467" cy="451.5" rx="467" ry="451.5" stroke="none"/>
+          <ellipse cx="467" cy="451.5" rx="466.5" ry="451" fill="none"/>
+        </g>
+        <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1020)" fill="#dfc7ff" stroke="#443ead" stroke-width="1" opacity="0.2">
+          <ellipse cx="467" cy="451.5" rx="467" ry="451.5" stroke="none"/>
+          <ellipse cx="467" cy="451.5" rx="466.5" ry="451" fill="none"/>
+        </g>
+      </g>
+    </svg>
   </div>
 </template>
 
@@ -51,20 +53,24 @@
   * {
     margin: 0;
     padding: 0;
-    background: #443EAD;
-    
   }
 
-  // .main{
-  //   display: flex;
-  // }
+  .main {
+    background: #443EAD;
+    z-index: -1;
+  }
+
+  .main-container{
+    height: 100vh; 
+    z-index: 1;
+  }
 
   .nav-container {
 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10em 20em;
+    padding: 7em 15em;
 
     header { 
       color: #FCF7FF; 
@@ -86,26 +92,34 @@
         padding: 0 1em; 
         color: #FCF7FF;
         font-size: 35px;
-        font-weight: bold;
         text-decoration: none;
       }
     }
   }
 
   .hero { 
-
-    padding-left: 20em;
+    padding-left: 15em;
 
     h1 { 
       color: #FCF7FF;
       font-size: 6em;
       font-weight: bold; 
+      width: 50%; 
     }
 
     p {
       padding-top: 2em; 
       color: #FCF7FF;
-      font-size: 35px;
+      font-size: 2.25em;
+      width: 65%; 
     }
+  }
+
+  .design { 
+    position: fixed;
+    top: 0; 
+    right: 0;
+    opacity: 60%;
+    z-index: 0;
   }
 </style>

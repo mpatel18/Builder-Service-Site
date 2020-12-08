@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="970" height="1367" viewBox="0 0 970 1367">
-  <g id="Design" transform="translate(-968)">
-    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(968 451)" fill="#958bb6" stroke="#443ead" stroke-width="1" opacity="0.4">
-      <ellipse cx="476" cy="458" rx="476" ry="458" stroke="none"/>
-      <ellipse cx="476" cy="458" rx="475.5" ry="457.5" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="934" height="1322" viewBox="0 0 934 1322">
+  <g id="Design" transform="translate(-1020)" opacity="0.6">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1020 419)" fill="#dfc7ff" stroke="#443ead" stroke-width="1" opacity="0.2">
+      <ellipse cx="467" cy="451.5" rx="467" ry="451.5" stroke="none"/>
+      <ellipse cx="467" cy="451.5" rx="466.5" ry="451" fill="none"/>
     </g>
-    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(986)" fill="#dfc7ff" stroke="#443ead" stroke-width="1" opacity="0.2">
-      <ellipse cx="476" cy="451.5" rx="476" ry="451.5" stroke="none"/>
-      <ellipse cx="476" cy="451.5" rx="475.5" ry="451" fill="none"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1020)" fill="#dfc7ff" stroke="#443ead" stroke-width="1" opacity="0.2">
+      <ellipse cx="467" cy="451.5" rx="467" ry="451.5" stroke="none"/>
+      <ellipse cx="467" cy="451.5" rx="466.5" ry="451" fill="none"/>
     </g>
   </g>
 </svg>
