@@ -1,16 +1,7 @@
 <template>
   <div class="main">
     <div class="main-container">
-        <div class="nav-container">
-            <header>logo</header>
-            <nav class="navbar">
-              <ul>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">service</a></li>
-                  <li><a href="#">contact</a></li>
-              </ul>
-          </nav>
-        </div>
+        <Navbar/>
         <div class="hero">
           <h1>{{ msg }}</h1>
           <p>{{ descrip }}</p>
@@ -33,6 +24,7 @@
 </template>
 
 <script>
+  import Navbar from '@/components/Navbar.vue'
   import i18n from '@/plugins/i18n';
 
   export default {
@@ -41,6 +33,9 @@
       msg: String,
       descrip: String
     },
+    components: {
+      Navbar
+    }, 
     methods: {
       changeLocale(locale) {
         i18n.locale = locale; 
@@ -68,39 +63,7 @@
     height: 100vh; 
     z-index: 2;
   }
-
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 7em 15em;
-
-    header { 
-      color: #E8D5B5; 
-      font-size: 45px;
-      font-family: 'Nunito', sans-serif;
-      cursor: pointer;
-    }
-
-    ul { 
-      display: flex;
-      justify-content: space-evenly;
-
-      li {
-        list-style-type: none;
-      }
-
-      a { 
-        display: block;
-        padding: 0 1em; 
-        color: #FCF7FF;
-        font-size: 30px;
-        font-family: 'Nunito', sans-serif;
-        text-decoration: none;
-      }
-    }
-  }
-
+  
   .hero { 
     padding-left: 15em;
 
