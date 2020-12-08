@@ -14,6 +14,7 @@
         <div class="hero">
           <h1>{{ msg }}</h1>
           <p>{{ descrip }}</p>
+          <button>Learn More</button>
         </div>
     </div>
     <svg class="design" width="934" height="1322" viewBox="0 0 934 1322">
@@ -72,7 +73,7 @@
     padding: 7em 15em;
 
     header { 
-      color: #FCF7FF; 
+      color: #E8D5B5; 
       font-size: 50px;
       font-weight: bold;
       cursor: pointer;
@@ -107,10 +108,23 @@
     }
 
     p {
-      padding-top: 2em; 
+      padding: 2em 0em 2em 0em; 
       color: #FCF7FF;
       font-size: 2.25em;
       width: 65%; 
+    }
+
+    button { 
+      background: #443EAD;
+      border-color: #E8D5B5;
+      color: #E8D5B5;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: none;
+      border-width: 10px 10px 10px 10px;
+      border-radius: 25px;
+      border-style: solid; 
+      padding: 0.5em 3em 0.5em 3em;
     }
   }
 
