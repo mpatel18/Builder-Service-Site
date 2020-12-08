@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <Main />
+    <Main 
+        msg="A Tagline For Your Service" 
+        descrip="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices, lacus ut fermentum malesuada, 
+                 orci ex ultricies mauris, tempus congue nisi orci eget urna." 
+    />
   </div>
 </template>
 
