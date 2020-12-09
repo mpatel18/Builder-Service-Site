@@ -56,11 +56,11 @@
 
   .main {
     background: #443EAD;
+    height: 100vh;
   }
 
   .main-container{
-    position: relative;
-    height: 100vh; 
+    position: relative; 
     z-index: 2;
   }
   

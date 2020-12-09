@@ -3,9 +3,9 @@
         <header>logo</header>
         <nav class="navbar">
             <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">contact</a></li>
+                <li><router-link to='/about'>about</router-link></li>
+                <li><router-link to='/about'>service</router-link></li>
+                <li><router-link to='/about'>contact</router-link></li>
             </ul>
         </nav>
     </div>
