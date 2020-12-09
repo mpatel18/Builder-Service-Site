@@ -5,7 +5,7 @@
         <div class="hero">
           <h1>{{ msg }}</h1>
           <p>{{ descrip }}</p>
-          <button>Learn More</button>
+          <router-link to="/about" tag="button">Learn More</router-link>
         </div>
     </div>
     <svg class="design" width="934" height="1322" viewBox="0 0 934 1322">
