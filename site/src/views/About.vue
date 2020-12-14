@@ -2,6 +2,14 @@
     <div class="about">
         <img src="@/assets/Stock.png" alt="stock">
         <div class="about-container">
+            <div class="glass1">
+                <h2>We Care</h2>
+                <p>
+                    Curabitur ac vehicula est, non fermentum risus. In accumsan leo vel 
+                    tellus mollis luctus. Aliquam erat volutpat. Sed id augue euismod, 
+                    pellentesque justo vel, varius lectus. 
+                </p>
+            </div>
             <div class="body">
                 <h1>An About Tag</h1>
                 <p>
@@ -9,24 +17,14 @@
                     consectetur adipiscing elit. Nam iaculis velit sed diam interdum pulvinar. 
                 </p>
             </div>
-            <!-- <div class="glassmorphism">
-                <div class="glass1">
-                    <h2>We Care</h2>
-                    <p>
-                        Curabitur ac vehicula est, non fermentum risus. In accumsan leo vel 
-                        tellus mollis luctus. Aliquam erat volutpat. Sed id augue euismod, 
-                        pellentesque justo vel, varius lectus. 
-                    </p>
-                </div>
-                <div class="glass2">
-                    <h2>We Listen</h2>
-                    <p>
-                        Curabitur ac vehicula est, non fermentum risus. In accumsan leo vel 
-                        tellus mollis luctus. Aliquam erat volutpat. Sed id augue euismod, 
-                        pellentesque justo vel, varius lectus. 
-                    </p>
-                </div>
-            </div> -->
+            <div class="glass2">
+                <h2>We Listen</h2>
+                <p>
+                    Curabitur ac vehicula est, non fermentum risus. In accumsan leo vel 
+                    tellus mollis luctus. Aliquam erat volutpat. Sed id augue euismod, 
+                    pellentesque justo vel, varius lectus. 
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -45,25 +43,30 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    
+    img {
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        // filter: grayscale(100%);
+        height: 100vh;
+        z-index: 1;
+    }
 
     .about { 
         height: 100vh;
-        background-color: #FCF7FF;
-        display: flex;
-    }
-
-    img {
-        filter: grayscale(100%);
     }
 
     .about-container { 
+        padding: 6em 12.5em 0em 15em;
         position: relative;
         z-index: 2;
     }
 
     .body { 
         text-align: right;
-        padding: 23.4375em 12.5em 0em 1em; 
+        padding-top: 2em;
+        padding-bottom: 2em;
 
         h1 { 
             font-size: 6em;
@@ -73,7 +76,30 @@ export default {
         p { 
             font-size: 35px;
             padding-top: 1.5em; 
-            padding-left: 2em;
+            padding-left: 12.5em;
+        }
+    }
+
+    .glass1, .glass2 { 
+        display: inline-block; 
+        background: rgba(235, 235, 235, 0.2); 
+        padding: 4em; 
+        border-radius: 1.5em;
+        position: relative;
+        backdrop-filter: blur(10px);
+        border: solid 3px transparent; 
+        background-clip: padding-box;
+        width: 30%; 
+        box-shadow: 10px 10x 10px 10px rgba(78, 49, 49, 0.02); 
+
+        h2 {
+            font-size: 35px;
+            padding-bottom: 10px; 
+        }
+
+        p { 
+            font-size: 17px;
+            line-height: 25px;
         }
     }
 
