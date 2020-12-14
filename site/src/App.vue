@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
@@ -8,5 +10,15 @@
   * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+  }
+
+  .fade-enter, .fade-leave-to {
+    opacity: 0%;
+    transform: translateY(0em);
+  }
+
+  .fade-enter-active, .fade-leave-active { 
+    transition: all 1.5s ease-in;
   }
 </style>
