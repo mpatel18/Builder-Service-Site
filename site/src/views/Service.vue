@@ -1,12 +1,15 @@
 <template>
     <div class="service">
-        What we offer <br/>
-        What our users think
+        <Splitscreen/>
     </div>
 </template>
 
 <script>
+import Splitscreen from '@/components/Splitscreen.vue'
 export default {
-    name: 'Service'
+    name: 'Service',
+    components: {
+        Splitscreen
+    }
 }
 </script>
