@@ -1,7 +1,7 @@
 <template>
-    <div class="about">
+    <div class="description">
         <img src="@/assets/Stock.png" alt="stock">
-        <div class="about-container">
+        <div class="description-container">
             <div class="glass1">
                 <h2>We Care</h2>
                 <p>
@@ -51,17 +51,18 @@ export default {
         left: 0;
         // filter: grayscale(100%);
         height: 100vh;
-        z-index: 1;
+        z-index: 0;
     }
 
-    .about { 
+    .description { 
         height: 100vh;
+        overflow: hidden;
     }
 
-    .about-container { 
+    .description-container { 
         padding: 6em 12.5em 0em 15em;
         position: relative;
-        z-index: 2;
+        z-index: 1;
     }
 
     .body { 

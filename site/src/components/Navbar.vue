@@ -4,7 +4,7 @@
         <nav class="navbar">
             <ul>
                 <li><router-link to='/about'>about</router-link></li>
-                <li><router-link to='/about'>service</router-link></li>
+                <li><router-link to='/service'>service</router-link></li>
                 <li><router-link to='/about'>contact</router-link></li>
             </ul>
         </nav>
