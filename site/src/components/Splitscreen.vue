@@ -1,10 +1,10 @@
 <template>
   <div class="split-screen">
       <div class="side1">
-          What we offer
+          <button>What we offer</button>
       </div>
       <div class="side2">
-          What our users think
+          <button>What our users think</button>
       </div>
   </div>
 </template>
@@ -24,6 +24,28 @@ export default {
 <style lang="scss" scoped>
     .split-screen {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        height: 100vh;
+        background: linear-gradient(90deg, #FCF7FF 50%, #443EAD 50%);
+    }
+
+    .side1, .side2 { 
+        position: relative;
+        text-align: center;
+        top: 40%; 
+
+        button { 
+            background: transparent;
+            border-color: black;
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+            box-shadow: none;
+            border-width: 10px 10px 10px 10px;
+            border-style: solid; 
+            outline: none; 
+            padding: 4em;
+            cursor: pointer;
+        }
     }
 </style>
