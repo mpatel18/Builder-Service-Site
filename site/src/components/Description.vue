@@ -43,6 +43,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
     img {
         position: absolute; 
         top: 0; 
@@ -70,12 +72,14 @@ export default {
         h1 { 
             font-size: 6em;
             color: #443EAD;
+            font-family: 'Roboto', sans-serif;
         }
 
         p { 
             font-size: 35px;
             padding-top: 1.5em; 
             padding-left: 12.5em;
+            font-family: 'Roboto', sans-serif;
         }
     }
 
@@ -92,13 +96,15 @@ export default {
         box-shadow: 10px 10x 10px 10px rgba(78, 49, 49, 0.02); 
 
         h2 {
-            font-size: 35px;
+            font-size: 30px;
             padding-bottom: 10px; 
+            font-family: 'Roboto', sans-serif;
         }
 
         p { 
             font-size: 17px;
-            line-height: 25px;
+            line-height: 20px;
+            font-family: 'Roboto', sans-serif;
         }
     }
 </style>
