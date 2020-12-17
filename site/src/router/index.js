@@ -4,6 +4,8 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Service from '../views/Service.vue';
 import Contact from '../views/Contact.vue';
+import Offer from '../views/Offer.vue';
+import Review from '../views/Review.vue'
 
 Vue.use(VueRouter); 
 
@@ -27,6 +29,16 @@ const routes = [
         path: '/contact',
         name: "Contact",
         component: Contact
+    },
+    {
+        path: '/offer',
+        name: "Offer",
+        component: Offer
+    },
+    {
+        path: '/review',
+        name: "Review",
+        component: Review
     }
 ]; 
 

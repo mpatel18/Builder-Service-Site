@@ -1,10 +1,10 @@
 <template>
   <div class="split-screen">
       <div class="side1">
-          <button>What We Offer</button>
+          <router-link to="/offer" tag="button">What We Offer</router-link>
       </div>
       <div class="side2">
-          <button>What Our Users Think</button>
+          <router-link to="/review" tag="button">What Our Users Think</router-link>
       </div>
   </div>
 </template>
@@ -39,7 +39,8 @@ export default {
         button { 
             background: transparent;
             border-color: black;
-            transition: border-radius ease 1.5s;
+            border-radius: 1em;
+            transition: border-radius ease 0.5s;
             color: black;
             font-weight: 600;
             font-size: 20px;
@@ -53,7 +54,7 @@ export default {
         }
 
         button:hover {
-            border-radius: 3em;
+            border-radius: 4em;
         }
     }
 </style>
