@@ -1,11 +1,16 @@
 <template>
     <div class="contact">
-        Our Contact Info
+        <Information/>
     </div>
 </template>
 
 <script>
+import Information from '@/components/Information.vue'
+
 export default {
-    name: 'Contact'
+    name: 'Contact',
+    components: {
+        Information
+    }
 }
 </script>
