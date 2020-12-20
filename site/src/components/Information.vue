@@ -35,17 +35,30 @@ export default {
 
 <style lang="scss" scoped>
     .information {
+        position: relative;
         background-color: #443EAD;
         height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .info-form {
         background-color: #6B5ED2;
-        
+        padding: 10em; 
+        width: 35%;
+        border-radius: 2em;
+        color: #FCF7FF;
+
+        h2 {
+            padding-bottom: 1em;
+            font-size: 35px;
+        }
+
         input[type=text], input[type=email], textarea {
             width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
+            padding: 12px 25px;
+            margin: 10px 0;
             display: block;
             border: 1px solid #ccc;
             border-radius: 4px;
