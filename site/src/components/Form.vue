@@ -15,6 +15,7 @@
               <label for="message">Message</label>
               <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
+              <button type="submit">Submit</button>
           </form>
       </div>
   </div>
@@ -37,6 +38,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
     .information {
         position: relative;
         background-color: #443EAD;
@@ -52,24 +56,46 @@ export default {
         width: 35%;
         border-radius: 2em;
         color: #FCF7FF;
+        line-height: 2em;
 
         h2 {
             padding-bottom: 1em;
             font-size: 35px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        label {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
         }
 
         input[type=text], input[type=email], textarea {
             width: 100%;
-            padding: 12px 25px;
-            margin: 10px 0;
+            padding: 12px 10px;
+            margin: 5px 0;
             display: block;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
+            outline: none;
         }
 
-        // input[type=text]:focus, input[type=email], textarea {
-        //     outline: none;
-        // }
+        input[type=text]:focus, input[type=email]:focus, textarea:focus {
+            border: 3px solid #484554; 
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 1em 2em 1em 2em ; 
+            border-radius: 1em;
+            border-style: solid; 
+            box-shadow: none;
+            outline: none; 
+            float: right;
+            font-family: 'Roboto', sans-serif;
+            background-color:  #484554;
+            color: #FCF7FF; 
+            cursor: pointer;
+        }
     }
 </style>

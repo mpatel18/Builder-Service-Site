@@ -14,7 +14,7 @@
   }
 
   .fade-enter, .fade-leave-to {
-    opacity: 0%;
+    opacity: 15%;
     transform: translateY(0em);
   }
 
