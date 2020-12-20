@@ -1,7 +1,7 @@
 <template>
   <div class="information">
       <div class="info-form">
-          <h2>Contact Us</h2>
+          <h2>{{ title }}</h2>
           <form action="">
               <label for="fname">First Name</label>
               <input type="text" id="fname">
@@ -24,7 +24,10 @@
 import i18n from '@/plugins/i18n';
 
 export default {
-    name: "Information",
+    name: "Form",
+    props: {
+        title: String
+    }, 
     methods: {
       changeLocale(locale) {
         i18n.locale = locale; 
@@ -64,5 +67,9 @@ export default {
             border-radius: 4px;
             box-sizing: border-box;
         }
+
+        // input[type=text]:focus, input[type=email], textarea {
+        //     outline: none;
+        // }
     }
 </style>

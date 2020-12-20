@@ -1,16 +1,16 @@
 <template>
     <div class="contact">
-        <Information/>
+        <Form title="Contact Us"/>
     </div>
 </template>
 
 <script>
-import Information from '@/components/Information.vue'
+import Form from '@/components/Form.vue'
 
 export default {
     name: 'Contact',
     components: {
-        Information
+        Form
     }
 }
 </script>
