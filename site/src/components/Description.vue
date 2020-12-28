@@ -49,7 +49,6 @@ export default {
         position: absolute; 
         top: 0; 
         left: 0;
-        // filter: grayscale(100%);
         height: 100vh;
         z-index: 0;
     }

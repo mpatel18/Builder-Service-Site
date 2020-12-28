@@ -23,6 +23,13 @@ export default {
     background: #443EAD;
     height: 100vh;
 
+    .title { 
+      opacity: 15%;
+      position: absolute;
+      top: 3em; 
+      z-index: 0;
+    }
+
     h1 {
       color: white;
       font-size: 300px;

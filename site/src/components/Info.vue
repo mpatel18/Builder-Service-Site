@@ -52,16 +52,31 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     .info {
         display: flex;
         justify-content: space-evenly;
+        position: relative;
+        z-index: 1;
+        padding-top: 15em; 
+        padding-left: 1em;
+        padding-right: 1em;
 
         .service {
             color: white;
             border: 10px solid white; 
             border-radius: 1em;
             text-align: center;
+            padding: 10em; 
+            margin: 1em;
+
+            h3 { 
+                font-size: 30px; 
+            }
+
+            p { 
+                font-size: 20px;
+            }
         }
     }
 </style>
