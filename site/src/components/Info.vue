@@ -52,6 +52,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    .info {
+        display: flex;
+        justify-content: space-evenly;
 
+        .service {
+            color: white;
+            border: 10px solid white; 
+            border-radius: 1em;
+            text-align: center;
+        }
+    }
 </style>

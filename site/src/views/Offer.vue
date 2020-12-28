@@ -22,5 +22,11 @@ export default {
   .offer {
     background: #443EAD;
     height: 100vh;
+
+    h1 {
+      color: white;
+      font-size: 300px;
+      font-style: bold; 
+    }
   }
 </style>
