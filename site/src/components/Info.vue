@@ -69,13 +69,16 @@ export default {
             text-align: center;
             padding: 10em; 
             margin: 1em;
+            font-family: 'Segoe UI', sans-serif, monospace;
 
             h3 { 
                 font-size: 30px; 
+                padding-bottom: 2em;
             }
 
             p { 
                 font-size: 20px;
+                line-height: 1.5em;
             }
         }
     }

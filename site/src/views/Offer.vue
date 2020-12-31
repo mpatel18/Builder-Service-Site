@@ -28,6 +28,7 @@ export default {
       position: absolute;
       top: 3em; 
       z-index: 0;
+      font-family: 'Segoe UI', sans-serif, monospace;
     }
 
     h1 {
