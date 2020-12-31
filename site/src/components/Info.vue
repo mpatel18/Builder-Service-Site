@@ -67,7 +67,7 @@ export default {
             border: 10px solid white; 
             border-radius: 1em;
             text-align: center;
-            padding: 10em; 
+            padding: 7em; 
             margin: 1em;
             font-family: 'Segoe UI', sans-serif, monospace;
 

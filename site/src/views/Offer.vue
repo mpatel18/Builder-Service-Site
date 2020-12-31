@@ -26,7 +26,6 @@ export default {
     .title { 
       opacity: 15%;
       position: absolute;
-      top: 3em; 
       z-index: 0;
       font-family: 'Segoe UI', sans-serif, monospace;
     }
