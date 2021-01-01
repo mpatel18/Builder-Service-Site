@@ -1,11 +1,15 @@
 <template>
   <div class="review">
-      Our Users Love this
+      <UserData/>
   </div>
 </template>
 
 <script>
+import UserData from '@/components/UserData.vue'
 export default {
-    name: "Review"
+    name: "Review",
+    components: {
+      UserData
+    }
 }
 </script>
