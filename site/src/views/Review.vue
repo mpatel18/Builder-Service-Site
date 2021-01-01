@@ -1,15 +1,18 @@
 <template>
   <div class="review">
-      <UserData/>
+      <UserReview 
+        name='Mark Smith' 
+        review='"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt urna arcu, eget dapibus mauris accumsan non."'
+      />
   </div>
 </template>
 
 <script>
-import UserData from '@/components/UserData.vue'
+import UserReview from '@/components/UserReview.vue'
 export default {
     name: "Review",
     components: {
-      UserData
+      UserReview
     }
 }
 </script>
