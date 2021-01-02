@@ -43,7 +43,6 @@ export default {
 
     .information {
         position: relative;
-        background-color: #443EAD;
         height: 100vh;
         display: flex;
         justify-content: center;

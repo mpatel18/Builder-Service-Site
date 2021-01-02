@@ -14,3 +14,9 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+    .contact {
+        background: #443EAD;
+    }
+</style>
