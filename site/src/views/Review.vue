@@ -34,23 +34,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
-h1 {
+
+  .review {
+    background: #FCF7FF;
+    height: 100vh;
+    position: relative;
+  }
+    
+  h1 {
+    position: absolute;
     font-family: 'Segoe UI', sans-serif, monospace;
     font-size: 300px;
     color: #443EAD; 
     font-style: bold;
-    text-align: center;
+    text-align: center; 
+    z-index: 1;
+    left: 24%;
+    transform: translate(0, 0%); 
   }
 
   .content {
+    position: absolute; 
     display: flex;
     justify-content: space-around;
+    z-index: 0; 
+    top: 29%;
+    left: 5.5%;
 
     form {
-      background-color: #443EAD;
+      background-color: #6B5ED2;
       color: #FCF7FF; 
-      border-radius: 1em;
+      border-radius: 3em;
       padding: 3em;
 
       h2 {
@@ -61,37 +75,38 @@ h1 {
       }
 
       label {
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-        }
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+      }
 
         input[type=text], input[type=email], textarea {
-            width: 100%;
-            padding: 12px 10px;
-            margin: 5px 0;
-            display: block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            outline: none;
+          width: 100%;
+          padding: 12px 10px;
+          margin: 5px 0;
+          display: block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          outline: none;
+          font-family: 'Roboto', sans-serif;
         }
 
         input[type=text]:focus, input[type=email]:focus, textarea:focus {
-            border: 3px solid #484554; 
+          border: 3px solid #484554; 
         }
 
         button {
-            margin-top: 15px;
-            padding: 1em 2em 1em 2em ; 
-            border-radius: 1em;
-            border-style: solid; 
-            box-shadow: none;
-            outline: none; 
-            float: right;
-            font-family: 'Roboto', sans-serif;
-            background-color:  #484554;
-            color: #FCF7FF; 
-            cursor: pointer;
+          margin-top: 15px;
+          padding: 1em 2em 1em 2em ; 
+          border-radius: 1em;
+          border-style: solid; 
+          box-shadow: none;
+          outline: none; 
+          float: right;
+          font-family: 'Roboto', sans-serif;
+          background-color:  #484554;
+          color: #FCF7FF; 
+          cursor: pointer;
         }
     }
   }

@@ -30,9 +30,9 @@ export default {
         align-items: center;
         justify-content: center;
         width: 20%;
-        background: #443EAD;
+        background: #6B5ED2;
         color: #FCF7FF; 
-        border-radius: 1em;
+        border-radius: 3em;
 
         .review {
         font-size: 25px; 
