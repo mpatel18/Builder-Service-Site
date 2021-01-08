@@ -1,10 +1,13 @@
-// const express = require('express');
-// const serve_static = requre('serve-static');
-// const path = require('path'); 
+const express = require('express');
 
-// const app = express(); 
+const app = express(); 
 
-// app.use('/', serve_static(path.join(__dirname, '/dist'))); 
+app.use(express.static(__dirname, '/dist/')); 
+app.get(/.*/, function(req, res) {
+    res.sendFile(__dirname, + '/dist/index.html'); 
+});
 
-// const PORT = process.env.PORT || 8080; 
-// app.listen(PORT); 
+const PORT = process.env.PORT || 8080; 
+app.listen(PORT); 
+
+console.log('Server started ...');
