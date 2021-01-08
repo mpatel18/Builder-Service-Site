@@ -92,12 +92,17 @@
       font-size: 20px;
       box-shadow: none;
       border-width: 10px 10px 10px 10px;
-      border-radius: 25px;
+      border-radius: 1em;
+      transition: border-radius ease 0.5s;
       border-style: solid; 
       outline: none; 
       padding: 0.5em 3.5em 0.5em 3.5em;
       font-family: 'Nunito', sans-serif;
       cursor: pointer;
+
+      &:hover {
+        border-radius: 2em;
+      }
     }
   }
 
